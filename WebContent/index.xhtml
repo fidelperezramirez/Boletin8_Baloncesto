@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:outputStylesheet library="css" name="index.css"/>
+<h:head></h:head>
+<h:body>
+	<div class="cabecera"><h2>Baloncesto</h2></div>
+	
+	<div class="formulario">
+		<p:outputLabel value="Ej1: Seleccione un jugador y una temporada y al pulsar el boton muestre los nombres de los equipos donde ha jugado y el salario que ha cobrado"/>
+		<h:form>
+			<p:panelGrid columns="2" id="panel1">
+				<p:outputLabel value="Nombre del jugador" for="nomJug"/>
+				<p:selectOneMenu id="nomJug" label="Seleccione el nombre">
+					<f:selectItem itemLabel="Seleccione" itemValue="" />
+				</p:selectOneMenu>
+				<p:outputLabel value="Nombre de la temporada" for="nomTemp"/>
+				<p:selectOneMenu id="nomTemp" label="Seleccione el nombre">
+					<f:selectItem itemLabel="Seleccione" itemValue=""/>
+				</p:selectOneMenu>
+				<p:commandButton icon="ui-icon-check" value="Buscar Equipos"/>
+			</p:panelGrid>
+		</h:form>
+		<p:outputLabel value="Ej1: Seleccione un jugador y una temporada y al pulsar el boton muestre los nombres de los equipos donde ha jugado y el salario que ha cobrado"/>
+		<h:form>
+			<p:panelGrid columns="2" id="panel2">
+				<p:outputLabel value="Nombre de la temporada" for="nomTemp2"/>
+				<p:selectOneMenu id="nomTemp2" label="Seleccione el nombre">
+					<f:selectItem itemLabel="Seleccione" itemValue=""/>
+				</p:selectOneMenu>
+				<p:commandButton icon="ui-icon-check" value="Buscar Jugadores"/>
+			</p:panelGrid>
+		</h:form>
+		<p:messages/>
+	</div>
+</h:body>
+</html>

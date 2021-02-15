@@ -1,0 +1,25 @@
+#principal{
+	width:1024px;
+	margin:0 auto;
+}
+
+.cabecera{
+	background-color: DodgerBlue;
+	color: white;
+	margin: 1em;
+}
+.cabecera>h2{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-left: 1%;
+}
+.formulario{
+	background-color: lightgrey;
+	margin: 1em;
+}
+#panel1{
+	border: 1px solid;
+}
+#panel2{
+	border: 1px solid;
+}
